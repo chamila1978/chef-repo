@@ -11,3 +11,8 @@ chef_server_url          "https://api.opscode.com/organizations/surreytech"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
+
+# EC2 access keys
+knife[:aws_access_key_id]     = "<AKIAJMQVBAROLHU57GQQ>"
+knife[:aws_secret_access_key] = "<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>"
+
