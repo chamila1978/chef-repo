@@ -1,0 +1,9 @@
+<html>
+	<head></head>
+		<body>
+			<h1>Welcome <%= node["fqdn"] %></h1>
+			<p>
+				This server has <%= node["memory"]["total"].to_i / 1024  %> memory!
+			</p>
+		</body>
+</html>
